@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Miku require to fill</title>
+  </head>
+  <body style="background-color: lightblue;">
+    <center>
+      <h1>Hatsune Miku Shop!</h1>
+      <form action="ty.html" method="get">
+        <p>Please fill out the form below to place your order.</p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="1" cols="20" required></textarea><br>
+        <label for="product">Product:</label>
+        <select id="product" name="product">
+          <option value="hatsune_miku_figure">Hatsune Miku Figure</option>
+          <option value="hatsune_miku_t-shirt">Hatsune Miku T-shirt</option>
+          <option value="hatsune_miku_keychain">Hatsune Miku Keychain</option>
+        </select><br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" required><br>
+        <label for="payment">Payment Method:</label>
+        <input type="radio" id="paypal" name="payment" value="paypal" required>
+        <label for="paypal">Paypal</label>
+        <input type="radio" id="credit_card" name="payment" value="credit_card">
+        <label for="credit_card">Credit Card</label>
+        <input type="radio" id="gcash" name="payment" value="gcash">
+        <label for="gcash">GCash</label><br>
+        <input type="submit" value="Submit Order">
+     </form>
+    </center>
+  </body>
+</html>
+
+
